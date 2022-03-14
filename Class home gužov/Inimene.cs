@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Class_home_gužov
+{
+    public class Inimene
+    {
+        private string nimi;
+        public Hoone hoone { get; set; }
+
+        public Inimene(string nimi)
+        {
+            this.nimi = nimi;
+        }
+
+        public void NaitaInfo()
+        {
+            Console.WriteLine($"Mina olen inimene, nimu nimi on {nimi}");
+            Console.WriteLine("Hoone info:");
+            hoone.NaitaInfo();
+            Console.WriteLine("Ukse info:");
+            hoone.GetUks().NaitaInfo();
+        }
+    }
+}
