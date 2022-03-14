@@ -11,6 +11,7 @@ namespace Class_home_gužov
             majake.uks = new Uks("must");
             mees.hoone = majake;
             mees.NaitaInfo();
+            
         }
     }
 }

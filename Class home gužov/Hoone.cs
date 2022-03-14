@@ -4,26 +4,25 @@ using System.Text;
 
 namespace Class_home_gužov
 {
-   public class Hoone
+   public abstract class Hoone
     {
         public int Pindala { get; set; }
         public Uks uks;
+        public KorteriteMaja korteritemaja;
        
         public Hoone(int pindala = 200)
         {
             Pindala = pindala;
         }
-        public void NaitaInfo()
-        {
-            Console.WriteLine($"Mina olen maja, minu pindala on {Pindala} m2");
-        }
+        public abstract void NaitaInfo();
+        
         
         public Uks GetUks()
         {
             return uks;
         }
 
-
+        
 
 
 

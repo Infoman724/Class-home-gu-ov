@@ -21,6 +21,7 @@ namespace Class_home_gužov
             hoone.NaitaInfo();
             Console.WriteLine("Ukse info:");
             hoone.GetUks().NaitaInfo();
+            
         }
     }
 }
